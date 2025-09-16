@@ -6,6 +6,10 @@ const app = express();
 const server = http.createServer(app);
 const wss = new WebSocketServer({ server });
 
+app.get('/', (req, res) => {
+  res.send('health check ok');
+});
+
 wss.on('connection', (ws) => {
   console.log('Client connected');
   ws.ping( () => {
