@@ -8,7 +8,15 @@ const wss = new WebSocketServer({ server });
 
 wss.on('connection', (ws) => {
   console.log('Client connected');
+  ws.ping( () => {
+    ws.send('Pong');
+  });
+  ws.pong( () => {
+    ws.send('Ping');
+  });
   ws.on('message', (message) => {
+
+
 
     console.log(`Received: ${message}`);
     ws.send(`Echo: ${message}`);  // Echo back
