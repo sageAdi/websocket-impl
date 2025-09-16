@@ -1,0 +1,25 @@
+{
+  "name": "websocket-impl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sageAdi/websocket-impl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sageAdi/websocket-impl/issues"
+  },
+  "homepage": "https://github.com/sageAdi/websocket-impl#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "ws": "^8.18.3"
+  }
+}
